@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+    <!--Header that displays contact and hours information-->
+    <header id="top-bar">
+        <div id="left-content">
+            <span><ion-icon name="time-outline"></ion-icon> 9:00 AM - 7:00 PM</span>
+            <span><ion-icon name="mail-outline"></ion-icon> exoticmotorsports@gmail.com</span>
+        </div>
+            <span><ion-icon name="call-outline"></ion-icon> 770-982-1322</span>
+    </header>
+    
+    <!--Navigation bar with company logo-->
+    <nav>
+        <div id="logo">
+            <img src="company-pics/Exotic Motorsports.png" alt="Logo">
+        </div>
+        <ul id="menu">
+            <li class="menu-left"><a href="index.html">Home</a></li>
+            <li class="menu-left"><a href="cars.html">Cars</a></li>
+            <li class="menu-left"><a href="services.html">Services</a></li>
+            <li id="menu-right"><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <!--Car page title-->
+    <div class="car-page-title">2025 Porsche 911</div>
+    <!--Car page container-->
+    <div class="car-page-container">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="2025-porsche-911-pics/1.jpg" alt="Porsche 911" width="800px" height="560px" class="car-page-img">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="2025-porsche-911-pics/2.jpg" alt="Porsche 911" width="800px" height="560px" class="car-page-img">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="2025-porsche-911-pics/3.jpg" alt="Porsche 911" width="800px" height="560px" class="car-page-img">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="2025-porsche-911-pics/4.jpg" alt="Porsche 911" width="800px" height="560px" class="car-page-img">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="2025-porsche-911-pics/5.jpg" alt="Porsche 911" width="800px" height="560px" class="car-page-img">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="2025-porsche-911-pics/6.jpg" alt="Porsche 911" width="800px" height="560px" class="car-page-img">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="2025-porsche-911-pics/7.jpg" alt="Porsche 911" width="800px" height="560px" class="car-page-img">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="2025-porsche-911-pics/8.jpg" alt="Porsche 911" width="800px" height="560px" class="car-page-img">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="2025-porsche-911-pics/9.jpg" alt="Porsche 911" width="800px" height="560px" class="car-page-img">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="2025-porsche-911-pics/10.jpg" alt="Porsche 911" width="800px" height="560px" class="car-page-img">
+            </div>
+
+            <!-- Navigation buttons -->
+            <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+            <button class="next" onclick="plusSlides(1)">&#10095;</button>
+        </div>
+    </div>
+    
+    <!--Car page details title-->
+    <div class="car-page-details-title">Car Details</div>
+    <!--Car page details container-->
+    <div class="car-page-details-container">
+        <div class="car-page-detail-icons">
+            <p>Make</p>
+            <p>Porsche</p>
+        </div>
+        <div class="car-page-detail-icons">
+            <p>Model</p>
+            <p>911</p>
+        </div>
+        <div class="car-page-detail-icons">
+            <p>Year </p>
+            <p>2025</p>
+        </div>
+        <div class="car-page-detail-icons">
+            <p>Body Style</p>
+            <p>Coupe</p>
+        </div>
+        <div class="car-page-detail-icons">
+            <p>Horsepower</p>
+            <p>518 HP</p>
+        </div>
+        <div class="car-page-detail-icons">
+            <p>Miles</p>
+            <p>136</p>
+        </div>
+        <div class="car-page-detail-icons">
+            <p>Color</p>
+            <p>Black</p>
+        </div>
+        <div class="car-page-detail-icons">
+            <p>VIN#</p>
+            <p>WP0AF2A97SS123456</p>
+        </div>
+        <div class="car-page-detail-icons" style="background-color: black; color: white;">
+            <p>Price</p>
+            <p>$415,000</p>
+        </div>
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+        const slides = document.getElementsByClassName("mySlides");
+        if (n > slides.length) { slideIndex = 1; }
+            if (n < 1) { slideIndex = slides.length; }
+                for (let i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+        }
+        slides[slideIndex - 1].style.display = "block";
+        }
+    </script>
+</body>
+</html>

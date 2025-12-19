@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+    <!--Header that displays contact and hours information-->
+    <header id="top-bar">
+        <div id="left-content">
+            <span><ion-icon name="time-outline"></ion-icon> 9:00 AM - 7:00 PM</span>
+            <span><ion-icon name="mail-outline"></ion-icon> exoticmotorsports@gmail.com</span>
+        </div>
+            <span><ion-icon name="call-outline"></ion-icon> 770-982-1322</span>
+    </header>
+    
+    <!--Navigation bar with company logo-->
+    <nav>
+        <div id="logo">
+            <img src="company-pics/Exotic Motorsports.png" alt="Logo">
+        </div>
+        <ul id="menu">
+            <li class="menu-left"><a href="index.html">Home</a></li>
+            <li class="menu-left"><a href="cars.html">Cars</a></li>
+            <li class="menu-left"><a href="services.html">Services</a></li>
+            <li id="menu-right"><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    
+    <!--Sort container used to find cars-->
+    <div id="sort-container">
+        <div>Select from Our Finest Collection of Sports Cars</div>
+            <!--Used to find car by VIN#-->
+            <div id="vin-container">
+                <label id="vin-label" for="vin-finder">Enter VIN#</label>
+                <input type="text" id="vin-finder">
+                <div id="message" style="color: red;"></div>
+                <input type="submit" value="Submit" onclick="myfunction()">
+            </div>
+    </div>
+    <!--Main container that holds the sidebar and car listings-->
+    <div id="main-container">
+        <!--Listing container that displays all the cars-->
+        <div id="listing-container">
+            <!--Links the listing to the detailed page-->
+
+            <a href="2021-mercedes-benz-amg-gt.html" class="listing-link">
+                <div class="listing">
+                    <img class="listing-img" src="2021-mercedes-benz-amg-gt-pics/Used-2021-Mercedes-Benz-AMG-GT-Black-Series-1742488805-1.jpg" alt="Mercedes-Benz AMG GT" width="400px" height="280px">
+                    <div class="listing-title">2021 Mercedes-Benz AMG GT</div>
+                    <hr>
+                    <div class="car-details-container">
+                    <div class="car-details">$400,000</div>
+                    <div class="car-details">543 mi</div>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="2023-dodge-challenger-widebody.html" class="listing-link">
+                <div class="listing">
+                    <img class="listing-img" src="2023-dodge-challenger-widebody-pics/1.jpg" alt="Dodge Challenger Widebody" width="400px" height="280px">
+                    <div class="listing-title">2023 Dodge Challenger Widebody</div>
+                    <hr>
+                    <div class="car-details-container">
+                    <div class="car-details">$159,900</div>
+                    <div class="car-details">194 mi</div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="2016-lamborghini-aventador.html" class="listing-link">
+                <div class="listing">
+                    <img class="listing-img" src="2016-lamborghini-aventador-pics/1.jpg" alt="Lamborghini Aventador" width="400px" height="280px">
+                    <div class="listing-title">2016 Lamborghini Aventador</div>
+                    <hr>
+                    <div class="car-details-container">
+                    <div class="car-details">$550,000</div>
+                    <div class="car-details">11,238 mi</div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="2024-mercedes-benz-sl-class.html" class="listing-link">
+                <div class="listing">
+                    <img class="listing-img" src="2024-mercedes-benz-sl-class/1.jpg" alt="Mercedes-Benz SL-Class" width="400px" height="280px">
+                    <div class="listing-title">2024 Mercedes-Benz SL-Class</div>
+                    <hr>
+                    <div class="car-details-container">
+                    <div class="car-details">$195,000</div>
+                    <div class="car-details">1,545 mi</div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="2016-mclaren-650s.html" class="listing-link">
+                <div class="listing">
+                    <img class="listing-img" src="2016-mclaren-650s-pics/Used-2016-McLaren-650S-Spider-1738961098-1.jpg" alt="McLaren 650S" width="400px" height="280px">
+                    <div class="listing-title" style="padding-bottom: 55px;">2016 McLaren 650S</div>
+                    <hr>
+                    <div class="car-details-container">
+                    <div class="car-details">$159,900</div>
+                    <div class="car-details">10,112 mi</div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="2021-ferrari-f8-tributo.html" class="listing-link">
+                <div class="listing">
+                    <img class="listing-img" src="2021-ferrari-f8-tributo-pics/1.jpg" alt="Ferrari F8 Tributo" width="400px" height="280px">
+                    <div class="listing-title">2021 Ferrari F8 Tributo</div>
+                    <hr>
+                    <div class="car-details-container">
+                    <div class="car-details">$364,900</div>
+                    <div class="car-details">4,454 mi</div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="2025-porsche-911.html" class="listing-link">
+                <div class="listing">
+                    <img class="listing-img" src="2025-porsche-911-pics/1.jpg" alt="Porsche 911" width="400px" height="280px">
+                    <div class="listing-title" style="padding-bottom: 55px;">2025 Porsche 911</div>
+                    <hr>
+                    <div class="car-details-container">
+                    <div class="car-details">$415,000</div>
+                    <div class="car-details">136 mi</div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="2017-bentley-continental.html" class="listing-link">
+                <div class="listing">
+                    <img class="listing-img" src="2017-bentley-continental-pics/1.jpg" alt="Bentley Continental" width="400px" height="280px">
+                    <div class="listing-title">2017 Bentley Continental</div>
+                    <hr>
+                    <div class="car-details-container">
+                    <div class="car-details">$146,900</div>
+                    <div class="car-details">20,087 mi</div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="2022-ferrari-488-challenge-evo.html" class="listing-link">
+                <div class="listing">
+                    <img class="listing-img" src="2022-ferrari-488-challenge-evo/1.jpg" alt="Ferrari 488 Challenge Evo" width="400px" height="280px">
+                    <div class="listing-title">2022 Ferrari 488 Challenge Evo</div>
+                    <hr>
+                    <div class="car-details-container">
+                    <div class="car-details">$250,000</div>
+                    <div class="car-details">7,156 mi</div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="2021-rolls-royce-cullinan.html" class="listing-link">
+                <div class="listing">
+                    <img class="listing-img" src="2021-rolls-royce-cullinan-pics/1.jpg" alt="Rolls-Royce Cullinan" width="400px" height="280px">
+                    <div class="listing-title">2021 Rolls-Royce Cullinan</div>
+                    <hr>
+                    <div class="car-details-container">
+                    <div class="car-details">$385,000</div>
+                    <div class="car-details">10,229 mi</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!--Format everything in this like the new styling-->
+
+    <!--Footer to call information-->
+    <footer id="cars-bottom">
+        <p id="cars-bottom-text">Not seeing the car you wanted? Give us a call at 770-982-1322.</p>
+    </footer>
+
+    <script>
+        // This function runs when the user tries to find a VIN number
+        function myfunction () {
+            const message = document.getElementById("message");
+            message.innerHTML = "";
+            // Get the VIN number the user entered, getting rid of any extra space they add
+            let x = document.getElementById("vin-finder").value.trim();
+
+            // A list of VIN numbers and their matching html links
+            const vinTags = {
+                "SBM11FAAXGW005989" : "2016-mclaren-650s.html",
+                "W1KYJ8BA3MA042012" : "2021-mercedes-benz-amg-gt.html",
+                "2C3CDZL96PH102929" : "2023-dodge-challenger-widebody.html",
+                "ZHWUF3ZD8GLA04663" : "2016-lamborghini-aventador.html",
+                "W1KVK8CB8RF022713" : "2024-mercedes-benz-sl-class.html",
+                "ZFF92LLA3M0263114" : "2021-ferrari-f8-tributo.html",
+                "WP0AF2A97SS123456" : "2025-porsche-911.html",
+                "SCBFB7ZA8HC065314" : "2017-bentley-continental.html",
+                "ZFF87EXX000276953" : "2022-ferrari-488-challenge-evo.html",
+                "SLATV4C09MU206991" : "2021-rolls-royce-cullinan.html",
+            };
+
+            // Try and catch for the entered VIN number
+            try {
+                // If the VIN is empty, it will throw an error. If the VIN is not 17 characters long, it will also throw an error
+                if (x == "") throw "Empty";
+                if (x.length !== 17) throw "Number needs to be 17 characters";
+
+                // If the VIN number is in the list, it will take you to the matching html page
+                if (vinTags[x]) {
+                    window.location.href = vinTags[x];
+                }
+                // If the VIN is not found in the list, it will throw another error
+                else {
+                    throw "Vin not found";
+                }
+
+            }
+            // The catch displays the error message
+            catch(err) {
+                message.innerHTML = "Error: " + err + ".";
+            }
+        }
+    </script>
+</body>
+</html>

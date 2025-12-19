@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+     <!--Header that displays contact and hours information-->
+     <header id="top-bar">
+        <div id="left-content">
+            <span><ion-icon name="time-outline"></ion-icon> 9:00 AM - 7:00 PM</span>
+            <span><ion-icon name="mail-outline"></ion-icon> exoticmotorsports@gmail.com</span>
+        </div>
+            <span><ion-icon name="call-outline"></ion-icon> 770-982-1322</span>
+    </header>
+    
+    <!--Navigation bar with company logo-->
+    <nav>
+        <div id="logo">
+            <img src="company-pics/Exotic Motorsports.png" alt="Logo">
+        </div>
+        <ul id="menu">
+            <li class="menu-left"><a href="index.html">Home</a></li>
+            <li class="menu-left"><a href="cars.html">Cars</a></li>
+            <li class="menu-left"><a href="services.html">Services</a></li>
+            <li id="menu-right"><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!--Image Displayed of Cars for service page-->
+    <img id="service-img" src="service-pics/Luxury_Auto_Collection_Showroom-1100x619.jpg" alt="Services">
+
+    <!--Heading for the page-->
+    <div id = "service-banner">
+        <h1 id = "service-title">Services at Exotic Motorsports</h1>
+    </div>
+    
+    <!--Table for the services-->
+    <div class="table-container">
+        <table>
+            <thead>
+            <tr>
+                <th>Photo</th>
+                <th>Service</th>
+                <th>Price</th>
+                <th>Description</th>
+                <th>Duration of Process</th>
+            </tr>
+            </thead>
+            <tbody>
+            <!--Example serivce: Oil Chnage-->
+            <tr>
+                <td><img src="service-pics/71gq47MMxbL._AC_UF894,1000_QL80_.jpg" alt="Oil Change"></td>
+                <td>Oil Change</td>
+                <td>$80</td>
+                <td><p>Our oil change service keeps your vehicle running smoothly. Our certified technicians will:
+                    <ol>
+                    <li>Replace old oil with fresh, high-quality oil for optimal performance.</li>
+                    <li>Install a new oil filter to prevent contaminants.</li>
+                    <li>Inspect fluid levels, belts, and tire pressure for added safety.</li>
+                    </ol>
+                    Regular oil changes reduce engine wear and improve fuel efficiency. Trust us to keep your car in top shape.</p></td>
+                <td>1-2 hours</td>
+            </tr>
+            <!--Additional services following similar structure to the oil change-->
+            <tr>
+                <td><img src="service-pics/3m+Wrap+Films.jpg" alt="Wraps"></td>
+                <td>Wrap Materials
+                    <ul>
+                        <li>Matte</li>
+                        <li>Color Flip</li>
+                        <li>Satin</li>
+                        <li>Glossy</li>
+                        <li>Texture</li>
+                    </ul>
+                </td>
+                <td><ul>
+                    <li>$2,000</li>
+                    <li>$2,500</li>
+                    <li>$2,000</li>
+                    <li>$2,000</li>
+                    <li>$3,000</li>
+                </ul></td>
+                <td><p>We offer professional vehicle wrapping to transform your car’s look with high-quality vinyl wraps. Choose from various finishes like Matte, Gloss, Satin, or even Textured designs like Carbon Fiber. Our wraps provide a fresh, custom look while protecting your car's paint.The process is quick, non-invasive, and can be removed without damage. Let us help you customize your vehicle—contact us today to get started!</p></td>
+                <td>1-2 Days</td>
+            </tr>
+            <tr>
+                <td><img src="service-pics/2119-hero-rims-vs-wheels.avif" alt="Rims"></td>
+                <td>Rims</td>
+                <td>$1000</td>
+                <td><p>We offer a wide range of premium rims to enhance your car’s style and performance. Our rims are made from high-quality materials, improving both aesthetics and handling. Choose from various designs, finishes, and sizes to suit your vehicle. Visit us today to find the perfect set for your car!</p></td>
+                <td>1-2 hours</td>
+            </tr>
+            <tr>
+                <td><img src="service-pics/pile-of-tires-on-white-background-royalty-free-image-672151801-1561751929.avif" alt="Tires"></td>
+                <td>Tires</td>
+                <td>$600</td>
+                <td><p>We offer a wide range of high-quality tires for superior traction, durability, and performance. Whether you need all-season, winter, or performance tires, we have options to suit your needs. Visit us today for expert tire selection and professional installation!</p></td>
+                <td>1-2 hours</td>
+            </tr>
+            <tr>
+                <td><img src="service-pics/window-tinting.png" alt="Tint"></td>
+                <td>Tint Percentage
+                    <ul>
+                        <li>50%</li>
+                        <li>35%</li>
+                        <li>30%</li>
+                        <li>20%</li>
+                        <li>15%</li>
+                    </ul>
+                </td>
+                <td><ul>
+                    <li>$150</li>
+                    <li>$200</li>
+                    <li>$250</li>
+                    <li>$300</li>
+                    <li>$350</li>
+                </ul></td>
+                <td><p>We offer premium window tinting to enhance your vehicle’s style, privacy, and comfort. Our high-quality tints provide UV protection, reduce glare, and keep your interior cooler. Visit us today for expert installation and find the perfect tint for your car!</p></td>
+                <td>2-4 hours</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!--The subtotal table for service selection-->
+    <div class="subtotal-body">
+        <div class="subtotal-container">
+            <h2>Service Selection</h2>
+            <table class="subtotal-table"> 
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>Price</th>
+                        <th>Select</th>
+                    </tr>
+                </thead>
+                <tbody id="serviceTable">
+                    <!-- Services will be dynamically added here -->
+                </tbody>
+            </table>
+            <!--Button to go to the cart-->
+            <input type="submit" value="Go to Cart" onclick="goToCart()">
+        </div>
+        
+        <script>
+            // Array of services with their names and prices
+            // This array will be used to populate the table and calculate the subtotal
+            const services = [
+                { name: "Oil Change", price: 80 },
+                { name: "Matte", price: 2000 },
+                { name: "Color Flip", price: 2500 },
+                { name: "Satin", price: 2000 },
+                { name: "Glossy", price: 2000 },
+                { name: "Texture", price: 3000 },
+                { name: "Rims", price: 1000 },
+                { name: "Tires", price: 600 },
+                { name: "50% Tint", price: 150 },
+                { name: "35% Tint", price: 200 },
+                { name: "30% Tint", price: 250 },
+                { name: "20% Tint", price: 300 },
+                { name: "15% Tint", price: 350 }
+            ];
+        
+            // Reference to the table body where services will be displayed
+            const tableBody = document.getElementById('serviceTable');
+            let selectedServices = [];
+        
+            // Dynamically create table rows for each service
+            // Each row contains the service name, price, and a checkbox for selection
+            services.forEach(function(service, index) {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${service.name}</td>
+                    <td>$${service.price}</td>
+                    <td><input type="checkbox" data-index="${index}" data-price="${service.price}" onchange="updateSubtotal()"></td>
+                `;
+    
+                tableBody.appendChild(row);
+            });
+        
+            // Function to update the subtotal based on selected services
+            function updateSubtotal() {
+                const checkboxes = document.querySelectorAll('.subtotal-table input[type="checkbox"]');
+                let subtotal = 0;
+                selectedServices = []; // Reset selected services
+        
+                checkboxes.forEach(function(checkbox) {
+                    const index = parseInt(checkbox.dataset.index);
+                    if (checkbox.checked) {
+                        subtotal += parseFloat(checkbox.dataset.price);
+                        selectedServices.push(services[index]);
+                    }
+                });
+            }
+
+        // Function to save selected services to local storage and navigate to the cart page
+        // This function is called when the "Go to Cart" button is clicked
+            function goToCart() {
+                localStorage.setItem('selectedServices', JSON.stringify(selectedServices));
+                window.location.href = 'cart.html';
+            }
+        </script>
+    </div>
+    <footer id="service-bottom">
+        <p id="service-bottom-text">Want to schedule an appointment on your car TODAY? Give us a call at 770-982-1322 between the hours of 9:00 AM to 7:00 PM.</p>
+    </footer>
+</body>
+</html>     

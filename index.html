@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exotic Motorsports</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+    <!--Header that displays contact and hours information-->
+    <header id="top-bar">
+        <div id="left-content">
+            <span><ion-icon name="time-outline"></ion-icon> 9:00 AM - 7:00 PM</span>
+            <span><ion-icon name="mail-outline"></ion-icon> exoticmotorsports@gmail.com</span>
+        </div>
+            <span><ion-icon name="call-outline"></ion-icon> 770-982-1322</span>
+    </header>
+    
+    <!--Navigation bar with company logo-->
+    <nav>
+        <div id="logo">
+            <img src="company-pics/Exotic Motorsports.png" alt="Logo">
+        </div>
+        <ul id="menu">
+            <li class="menu-left"><a href="index.html">Home</a></li>
+            <li class="menu-left"><a href="cars.html">Cars</a></li>
+            <li class="menu-left"><a href="services.html">Services</a></li>
+            <li id="menu-right"><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!--Cars picture-->
+    <img id="home-display" src="company-pics/Top-20-Fastest-Exotic-Cars-in-the-World-in-2024.webp" alt="Multiple Exotic Cars">
+
+    <!--Recent arrivals container that display new cars-->
+    <div id="recent-arrivals-title">Recent Arrivals</div>
+    <div id="listing-container">
+        <a href="2023-dodge-challenger-widebody.html" class="listing-link">
+            <div class="listing">
+                <img class="listing-img" src="2023-dodge-challenger-widebody-pics/1.jpg" alt="Dodge Challenger Widebody" width="400px" height="280px">
+                <div class="listing-title">2023 Dodge Challenger Widebody</div>
+                <hr>
+                <div class="car-details-container">
+                <div class="car-details">$159,900</div>
+                <div class="car-details">194 mi</div>
+                </div>
+            </div>
+        </a>
+
+        <a href="2016-lamborghini-aventador.html" class="listing-link">
+            <div class="listing">
+                <img class="listing-img" src="2016-lamborghini-aventador-pics/1.jpg" alt="Lamborghini Aventador" width="400px" height="280px">
+                <div class="listing-title">2016 Lamborghini Aventador</div>
+                <hr>
+                <div class="car-details-container">
+                <div class="car-details">$550,000</div>
+                <div class="car-details">11,238 mi</div>
+                </div>
+            </div>
+        </a>
+
+        <a href="2024-mercedes-benz-sl-class.html" class="listing-link">
+            <div class="listing">
+                <img class="listing-img" src="2024-mercedes-benz-sl-class/1.jpg" alt="Mercedes-Benz SL-Class" width="400px" height="280px">
+                <div class="listing-title">2024 Mercedes-Benz SL-Class</div>
+                <hr>
+                <div class="car-details-container">
+                <div class="car-details">$195,000</div>
+                <div class="car-details">1,545 mi</div>
+                </div>
+            </div>
+        </a>
+    </div>    
+    
+    
+    <!--Footer that contains promotional offers-->
+    <footer id="home-bottom">
+        <p id="home-bottom-text">Promotional Offers Coming Soon!</p>
+        <label id="home-bottom-label" for="promo-offer">Enter Email:</label>
+        <input type="text" name="promo-offer" id="promo-offer">
+        <input type="submit" value="Submit">
+    </footer>
+
+    <!--JavaScript to handle promotion submission-->
+    <script>
+        document.querySelector('input[type="submit"]').addEventListener('click', function (event) {
+        // Prevent the form from submitting
+        event.preventDefault();
+ 
+        // Gather the form data
+        const email = document.getElementById('promo-offer').value.trim();
+ 
+        // Validate the form data for an entered email
+        if( !email ) {
+            alert(`Please fill out email.`);
+            return; // Exit the function early
+        }
+ 
+        // Display the information in a pop-up
+        alert(`Thank you, ${email} for signing up for our promotional offers!`);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+     <!--Header that displays contact and hours information-->
+     <header id="top-bar">
+        <div id="left-content">
+            <span><ion-icon name="time-outline"></ion-icon> 9:00 AM - 7:00 PM</span>
+            <span><ion-icon name="mail-outline"></ion-icon> exoticmotorsports@gmail.com</span>
+        </div>
+            <span><ion-icon name="call-outline"></ion-icon> 770-982-1322</span>
+    </header>
+    
+    <!--Navigation bar with company logo-->
+    <nav>
+        <div id="logo">
+            <img src="company-pics/Exotic Motorsports.png" alt="Logo">
+        </div>
+        <ul id="menu">
+            <li class="menu-left"><a href="index.html">Home</a></li>
+            <li class="menu-left"><a href="cars.html">Cars</a></li>
+            <li class="menu-left"><a href="services.html">Services</a></li>
+            <li id="menu-right"><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!--Title banner for the cart page-->
+    <div id="cart-banner">
+        <h1 id="cart-title">Cart</h1>
+    </div>
+
+    <!--A box that shows the selected services and total-->
+    <div class="box">
+        <h1>Selected Services</h1>
+        <ul id="cart-list"></ul>
+        <h2 id="cart-total"></h2>
+    </div>
+
+    <script>
+        // Gets the saved services from the local storage and it uses an empty list if nothing is selected to make sure the code doesn't break
+        const selectedServices = JSON.parse(localStorage.getItem('selectedServices')) || [];
+    
+        // Get the HTML elements to show the selected items and total
+        const list = document.getElementById('cart-list');
+        const total = document.getElementById('cart-total');
+        let subtotal = 0;
+
+        // Loop through each selected service
+        selectedServices.forEach(function(service) {
+            const li = document.createElement('li');
+            li.textContent = service.name + ' - $' + service.price;
+            list.appendChild(li);
+            subtotal += service.price;
+        });
+
+        total.textContent = `Total: $${subtotal.toLocaleString()}`;
+    </script>
+
+    <!--Form for the user to book their service-->
+    <form action="confirmation.html" method="POST">
+        <p>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </p>
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </p>
+        <p>
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date" required>
+        </p>
+        <p>
+            <input type="submit" value="Book Service">
+        </p>
+    </form>
+</body>
+</html>
