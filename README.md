@@ -8,11 +8,22 @@ The service page allows users to select from multiple services, including oil ch
 
 The application also includes a contact page that provides dealership information such as the address, staff details, and available methods of contact.
 
-Below are pictures of the website.
+## Screenshots
 
+### Home Page
 ![Home Page](web-demo-pics/home-page.png)
+
+### Cars Page
 ![Cars Page](web-demo-pics/cars-page.png)
+
+### Vehicle Details
 ![AMG GT Page](web-demo-pics/amg-gt-page.png)
+
+### Services Page
 ![Services Page](web-demo-pics/services-page.png)
+
+### Checkout Page
 ![Checkout Page](web-demo-pics/checkout-page.png)
+
+### Contact Page
 ![Contact Page](web-demo-pics/contact-page.png)
